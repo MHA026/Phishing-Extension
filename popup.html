@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhishGuard</title>
+    <style>
+        body {
+            width: 300px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .status-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .status-icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        .status-text {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .score {
+            font-size: 14px;
+            color: #666;
+        }
+        .safe { color: #2ecc71; }
+        .suspicious { color: #f1c40f; }
+        .phishing { color: #e74c3c; }
+        .loading { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PhishGuard Scan</h1>
+        <div class="status-card" id="statusCard">
+            <div class="status-icon loading" id="icon">🔄</div>
+            <div class="status-text" id="status">Scanning...</div>
+            <div class="score" id="scoreDetails">Checking URL safety</div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
